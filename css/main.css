@@ -4,6 +4,13 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
 header {
   text-align: center;
   padding-top: 2em;
@@ -20,14 +27,15 @@ header p {
 
 main {
   display: flex;
-  justify-content: space-between;
   margin: 3em 6em;
-  height: 280px;
+  height: 230px;
+  width: 600px;
+  justify-content: center;
 }
 
 .features {
   flex: 1;
-  margin-right: 1em;
+  margin-right: 25px;
   background-color: rgb(245, 245, 245);
   border-radius: 0.9em;
   font-size: 0.5em;
@@ -61,21 +69,61 @@ main {
 
 .prices {
   flex: 1;
-  border: red 1px solid;
-  flex: 1;
   font-size: 0.5em;
   font-size: 0.6em;
   border-radius: 0.9em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .pricing-container {
-  border: 1 px solid red;
+  border: 1px solid lightgray;
   display: flex;
   font-size: 0.6em;
   justify-content: space-between;
-  padding: 16px;
+  border-radius: 6px;
   align-items: center;
+}
+.pricing-container .price-text {
+  display: flex;
+  align-items: center;
+  width: 70px;
+}
+.pricing-container .price-dis {
+  background-color: rgb(243, 234, 234);
+  border-radius: 16px;
+  color: rgb(209, 12, 12);
+  padding: 3px 5px;
+  font-size: 5px;
+}
+.pricing-container .price-text-title {
+  font-size: 8px;
+}
+.pricing-container .price-text-dis {
+  margin-left: 8px;
+}
+.pricing-container .price-value {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+  justify-content: flex-end;
+  width: 70px;
+}
+.pricing-container .value {
+  font-size: 14px;
+  margin-right: 4px;
+  font-weight: 500;
+}
+.pricing-container .currency {
+  font-size: 16px;
+  font-weight: 500;
+}
+.pricing-container .duration {
+  color: gray;
+}
+
+.active {
+  color: white;
+  background-color: rgb(61, 61, 253);
 }/*# sourceMappingURL=main.css.map */
